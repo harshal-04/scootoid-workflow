@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scootoid.AI - Integrated Workflow</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="workflow.js" defer></script>
+</head>
+<body>
+  <section class="workflow-section" data-loop="true">
+    <div class="container">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>Transform your PV Elite PDF into a compliant FE report in hours, not weeks</p>
+      </div>
+
+      <!-- Combined Workflow Container -->
+      <div class="workflow-container">
+        <!-- Progress Section -->
+        <div class="progress-section">
+          <div class="progress-title">Analysis Progress</div>
+          <div class="progress-subtitle">Automated workflow processing</div>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar" id="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <span class="sr-only">Progress: 0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workflow Steps -->
+        <div class="flow-container">
+          <!-- Step 1: Upload -->
+          <div class="workflow-step" data-step="1" data-duration="60000">
+            <div class="step-time">< 1 min</div>
+            <div class="step-icon">
+              <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+              <span class="sr-only">Upload</span>
+            </div>
+            <div class="step-title">Upload PDF</div>
+            <div class="step-description">Submit PV Elite input file</div>
+          </div>
+
+          <div class="flow-arrow" aria-hidden="true">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <!-- Step 2: Validation -->
+          <div class="workflow-step" data-step="2" data-duration="180000">
+            <div class="step-time">2-3 min</div>
+            <div class="step-icon">
+              <i class="fas fa-check-double" aria-hidden="true"></i>
+              <span class="sr-only">Validation</span>
+            </div>
+            <div class="step-title">AI Validation</div>
+            <div class="step-description">Smart error detection</div>
+          </div>
+
+          <div class="flow-arrow" aria-hidden="true">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <!-- Step 3: Analysis -->
+          <div class="workflow-step" data-step="3" data-duration="1800000">
+            <div class="step-time">15-30 min</div>
+            <div class="step-icon">
+              <i class="fas fa-brain" aria-hidden="true"></i>
+              <span class="sr-only">Analysis</span>
+            </div>
+            <div class="step-title">Auto FEA</div>
+            <div class="step-description">AI-powered analysis</div>
+          </div>
+
+          <div class="flow-arrow" aria-hidden="true">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <!-- Step 4: Compliance -->
+          <div class="workflow-step" data-step="4" data-duration="600000">
+            <div class="step-time">5-10 min</div>
+            <div class="step-icon">
+              <i class="fas fa-certificate" aria-hidden="true"></i>
+              <span class="sr-only">Compliance</span>
+            </div>
+            <div class="step-title">Compliance</div>
+            <div class="step-description">ASME code validation</div>
+          </div>
+
+          <div class="flow-arrow" aria-hidden="true">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <!-- Step 5: Generation -->
+          <div class="workflow-step" data-step="5" data-duration="300000">
+            <div class="step-time">3-5 min</div>
+            <div class="step-icon">
+              <i class="fas fa-file-contract" aria-hidden="true"></i>
+              <span class="sr-only">Report Generation</span>
+            </div>
+            <div class="step-title">Report Gen</div>
+            <div class="step-description">Professional PDF output</div>
+          </div>
+
+          <div class="flow-arrow" aria-hidden="true">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <!-- Step 6: Download -->
+          <div class="workflow-step" data-step="6" data-duration="60000">
+            <div class="step-time">< 1 min</div>
+            <div class="step-icon">
+              <i class="fas fa-download" aria-hidden="true"></i>
+              <span class="sr-only">Download</span>
+            </div>
+            <div class="step-title">Download</div>
+            <div class="step-description">Get compliant report</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Value Proposition Section -->
+      <div class="value-proposition">
+        <div class="value-title">
+          From Weeks to Hours
+          <span class="value-highlight">90% Faster</span>
+          Code-Compliant Engineering Reports
+        </div>
+        
+        <div class="value-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="45" data-suffix="">0</span>
+            <div class="stat-label">Minutes Total</div>
+            <div class="stat-description">Complete analysis cycle</div>
+          </div>
+          
+          <div class="stat-item">
+            <span class="stat-number" data-target="100" data-suffix="%">0</span>
+            <div class="stat-label">ASME Compliant</div>
+            <div class="stat-description">Built-in validation engine</div>
+          </div>
+          
+          <div class="stat-item">
+            <span class="stat-number" data-target="24" data-suffix="/7">0</span>
+            <div class="stat-label">Available</div>
+            <div class="stat-description">No software installation</div>
+          </div>
+          
+          <div class="stat-item">
+            <span class="stat-number" data-target="0" data-prefix="$">0</span>
+            <div class="stat-label">Setup Cost</div>
+            <div class="stat-description">Pay per report only</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
